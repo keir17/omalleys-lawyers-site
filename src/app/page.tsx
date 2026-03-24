@@ -12,11 +12,14 @@ import { SectionHeading } from "@/components/shared/SectionHeading";
 export default function Home() {
   return (
     <main className="flex-1 flex flex-col w-full overflow-hidden">
-      {/* 2. Hero */}
-      <HomeHero />
+      {/* Responsive Fold Wrapper */}
+      <div className="flex flex-col min-h-[calc(100vh-6rem)] md:min-h-[calc(100vh-7rem)]">
+        {/* 2. Hero */}
+        <HomeHero />
 
-      {/* 3. Trust bar */}
-      <TrustBar />
+        {/* 3. Trust bar */}
+        <TrustBar />
+      </div>
 
       {/* 4. Services grid */}
       <ServicesGrid />

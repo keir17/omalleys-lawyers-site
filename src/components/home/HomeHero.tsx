@@ -11,7 +11,7 @@ export function HomeHero() {
   const words = headline.split(" ");
 
   return (
-    <section className="relative h-[85vh] min-h-[600px] max-h-[900px] flex items-center bg-navy overflow-hidden">
+    <section className="relative flex-1 w-full min-h-[500px] flex items-center bg-navy overflow-hidden">
       {/* Background Image with Teal Overlay */}
       <motion.div 
         initial={{ opacity: 0 }}
@@ -27,9 +27,9 @@ export function HomeHero() {
         <div className="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-navy/10"></div>
       </motion.div>
 
-      <div className="container mx-auto px-4 z-10 relative mt-16">
+      <div className="container mx-auto px-4 z-10 relative">
         <div className="max-w-3xl">
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading text-white mb-6 leading-[1.1]">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[4.5rem] font-heading text-white mb-6 leading-[1.1]">
             {words.map((word, i) => (
               <motion.span
                 key={i}
