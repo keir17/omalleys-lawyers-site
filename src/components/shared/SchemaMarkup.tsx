@@ -5,7 +5,7 @@ export function SchemaMarkup() {
     "name": "O'Malleys Lawyers",
     "legalName": "O'MALLEYS LEGAL LIMITED",
     "url": "https://omalleys.co.nz",
-    "logo": "https://omalleys.co.nz/logo.png",
+    "logo": "https://omalleys.co.nz/images/new-logo.svg",
     "image": "https://files.catbox.moe/s0kuz1.jpg",
     "description": "Christchurch family law specialists handling separation, relationship property, wills, and conveyancing. Trusted for over 20 years. Legal Aid provider.",
     "telephone": "+64-3-379-0590",

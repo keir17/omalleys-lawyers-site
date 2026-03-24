@@ -10,7 +10,7 @@ export function Footer() {
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
         <div className="space-y-6 lg:max-w-xs">
           <div className="bg-warm-white inline-block p-4 rounded-lg shadow-sm">
-            <Image src="/images/logo.jpeg" alt="O'Malleys Lawyers" width={250} height={80} className="h-12 w-auto object-contain mix-blend-multiply" />
+            <Image src="/images/new-logo.svg" alt="O'Malleys Lawyers" width={100} height={100} className="h-12 w-auto object-contain mix-blend-multiply" />
           </div>
           <p className="text-sm leading-relaxed text-surface/70">
             Christchurch family law specialists who treat you like a person. Trusted for over 20 years.

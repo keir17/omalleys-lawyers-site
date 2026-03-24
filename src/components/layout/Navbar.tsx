@@ -25,7 +25,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full bg-warm-white/90 backdrop-blur-md border-b border-border/40">
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
         <Link href="/" className="h-full block">
-          <Image src="/images/logo.jpeg" alt="O'Malleys Lawyers" width={400} height={100} className="h-full w-auto object-contain mix-blend-multiply" priority />
+          <Image src="/images/new-logo.svg" alt="O'Malleys Lawyers" width={100} height={100} className="h-16 w-auto object-contain mix-blend-multiply" priority />
         </Link>
 
         {/* Desktop Nav */}
