@@ -81,12 +81,17 @@ export default function ContactPage() {
           </div>
 
           <div className="lg:w-2/3">
-             {/* Map Placeholder */}
-             <div className="w-full h-48 md:h-64 rounded-2xl bg-slate-200 border border-border/80 mb-8 overflow-hidden relative">
-               <div className="absolute inset-0 flex items-center justify-center bg-teal-brand/5 text-teal-brand font-semibold text-lg flex-col gap-2 opacity-50">
-                 <MapPin weight="fill" className="w-8 h-8" />
-                 <span>Interactive Map Integration Point</span>
-               </div>
+             <div className="w-full h-48 md:h-[400px] rounded-2xl overflow-hidden relative mb-8 shadow-sm border border-border/80">
+               <iframe 
+                 width="100%" 
+                 height="100%" 
+                 frameBorder="0" 
+                 scrolling="no" 
+                 marginHeight={0} 
+                 marginWidth={0} 
+                 src="https://maps.google.com/maps?width=100%25&amp;height=100%25&amp;hl=en&amp;q=O'Malleys%20Lawyers%20Christchurch,%2068%20Fitzgerald%20Avenue,%20Christchurch%20Central%20City,%20Christchurch%208011+(O'Malleys%20Lawyers)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                 className="absolute inset-0 w-full h-full"
+               ></iframe>
              </div>
              
              <ContactForm />

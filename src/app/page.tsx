@@ -24,11 +24,6 @@ export default function Home() {
       {/* 5. "Why O'Malleys" stats + differentiators */}
       <StatsSection />
 
-      {/* 5.5 Texture Divider */}
-      <div className="relative w-full h-[150px] md:h-[250px] overflow-hidden bg-warm-white">
-        <Image src="/images/section-texture.png" fill className="object-cover opacity-60" alt="Section texture divider" />
-      </div>
-
       {/* 6. Testimonials */}
       <TestimonialsSection />
 

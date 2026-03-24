@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Baby, Heart, HouseLine, Scroll, UsersThree, FileText, Handshake } from "@phosphor-icons/react";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 
@@ -10,36 +11,42 @@ const services = [
     description: "Guidance through parenting orders, day-to-day care, and practical child-centred outcomes.",
     icon: Baby,
     href: "/services/family-law",
+    image: "/images/care-of-children.png",
   },
   {
     title: "Relationship Property",
     description: "Clear advice on property agreements and fair settlements during separation.",
     icon: Handshake,
     href: "/services/family-law",
+    image: "/images/relationship-property.png",
   },
   {
     title: "Family Violence",
     description: "Urgent protection orders and clear support when your family is in danger.",
     icon: Heart,
     href: "/services/family-law",
+    image: "/images/family-violence.png",
   },
   {
     title: "Conveyancing",
     description: "Handling the legal detail of buying or selling your Christchurch home.",
     icon: HouseLine,
     href: "/services/conveyancing",
+    image: "/images/conveyancing-home.png",
   },
   {
     title: "Wills & Estates",
     description: "Clear, up-to-date wills and empathetic estate administration.",
     icon: FileText,
     href: "/services/wills-estates",
+    image: "/images/wills-estates.png",
   },
   {
     title: "Elder Law",
     description: "Enduring powers of attorney and planning ahead to protect the people you love.",
     icon: UsersThree,
     href: "/services/elder-law",
+    image: "/images/elder-law.png",
   },
 ];
 
@@ -62,24 +69,33 @@ export function ServicesGrid() {
               <Link 
                 key={i} 
                 href={service.href}
-                className="group relative bg-white rounded-xl p-8 border border-border/60 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-teal-brand/5 flex flex-col items-start min-h-[260px] overflow-hidden"
+                className="group relative bg-navy rounded-xl p-8 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl flex flex-col items-start min-h-[360px] overflow-hidden"
               >
-                {/* Custom Hover Border Effect */}
-                <div className="absolute bottom-0 left-0 w-full h-[4px] bg-teal-brand scale-y-0 origin-bottom transition-transform duration-300 group-hover:scale-y-100" />
+                {/* Background Image Output with specific opacity */}
+                <Image 
+                  src={service.image} 
+                  fill 
+                  className="object-cover opacity-60 group-hover:opacity-75 transition-opacity duration-500 group-hover:scale-105" 
+                  alt={service.title} 
+                />
                 
-                <div className="w-14 h-14 rounded-full bg-teal-brand/10 flex items-center justify-center mb-6 text-teal-brand transition-transform duration-300 group-hover:scale-110 group-hover:bg-teal-brand group-hover:text-white">
+                {/* Overlay gradient to make text legible */}
+                <div className="absolute inset-0 bg-gradient-to-t from-navy/95 via-navy/60 to-navy/30" />
+                
+                <div className="relative z-10 w-14 h-14 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center mb-6 text-white transition-transform duration-300 group-hover:scale-110">
                   <Icon weight="light" className="w-7 h-7" />
                 </div>
                 
-                <h3 className="text-xl font-heading text-navy font-semibold mb-3 group-hover:text-teal-brand transition-colors">
+                <h3 className="relative z-10 text-2xl font-heading text-white font-medium mt-auto mb-3 drop-shadow-sm group-hover:text-blush transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-mid text-sm leading-relaxed mb-4 flex-1">
+                <p className="relative z-10 text-white/90 text-sm leading-relaxed mb-6 font-medium drop-shadow-sm">
                   {service.description}
                 </p>
-                <div className="mt-auto text-teal-brand text-sm font-semibold tracking-wide uppercase flex items-center gap-2">
-                  Find out more 
-                  <span className="transition-transform group-hover:translate-x-1">→</span>
+                
+                <div className="relative z-10 text-white text-sm font-semibold tracking-wide uppercase flex items-center gap-2 group-hover:text-white pb-2">
+                  <span className="border-b border-transparent group-hover:border-blush transition-colors pb-1">Find out more</span>
+                  <span className="transition-transform group-hover:translate-x-1 text-blush">→</span>
                 </div>
               </Link>
             )
