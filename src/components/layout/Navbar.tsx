@@ -50,7 +50,7 @@ export function Navbar() {
             03 379 0590
           </a>
           <Button asChild className="bg-blush hover:bg-blush/90 text-white rounded-md text-sm cursor-pointer shadow-none">
-            <Link href="tel:0333790590">Call Now</Link>
+            <Link href="/contact">Contact Us</Link>
           </Button>
         </div>
 
@@ -86,7 +86,7 @@ export function Navbar() {
                     03 379 0590
                   </a>
                   <Button asChild className="bg-blush hover:bg-blush/90 text-white w-full mt-2 text-lg py-6 shadow-none">
-                    <Link href="tel:0333790590" onClick={() => setOpen(false)}>Call Now</Link>
+                    <Link href="/contact" onClick={() => setOpen(false)}>Contact Us</Link>
                   </Button>
                 </div>
               </div>
