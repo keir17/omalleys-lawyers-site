@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { List, Phone } from "@phosphor-icons/react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { clsx } from "clsx";
 import Image from "next/image";
 
@@ -21,11 +21,29 @@ export function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="sticky top-0 z-50 w-full bg-warm-white/90 backdrop-blur-md border-b border-border/40">
+    <header 
+      className={clsx(
+        "fixed top-0 z-50 w-full transition-all duration-300",
+        isScrolled 
+          ? "bg-warm-white/95 backdrop-blur-md border-b border-border/40 shadow-sm" 
+          : "bg-transparent border-transparent"
+      )}
+    >
       <div className="container mx-auto px-4 h-24 md:h-28 flex items-center justify-between">
         <Link href="/" className="h-full block py-2 md:py-3 cursor-pointer">
-          <Image src="/images/new-logo.svg" alt="O'Malleys Lawyers" width={160} height={160} className="h-full w-auto object-contain mix-blend-multiply" priority />
+          <Image src="/images/new-logo.svg" alt="O'Malleys Lawyers" width={160} height={160} className={clsx("h-full w-auto object-contain transition-all duration-300", isScrolled ? "mix-blend-multiply" : "brightness-0 invert drop-shadow-md")} priority />
         </Link>
 
         {/* Desktop Nav */}
@@ -36,7 +54,8 @@ export function Navbar() {
               href={link.href}
               className={clsx(
                 "text-sm font-medium transition-colors hover:text-teal-brand",
-                pathname === link.href ? "text-teal-brand" : "text-charcoal"
+                !isScrolled && "text-white/90 drop-shadow-sm hover:text-white",
+                isScrolled && (pathname === link.href ? "text-teal-brand" : "text-charcoal")
               )}
             >
               {link.name}
@@ -46,8 +65,8 @@ export function Navbar() {
 
         {/* Actions */}
         <div className="hidden md:flex items-center gap-6">
-          <a href="tel:0333790590" className="flex items-center gap-2 text-navy hover:text-teal-brand transition-colors text-sm font-semibold">
-            <Phone weight="light" className="w-5 h-5" />
+          <a href="tel:0333790590" className={clsx("flex items-center gap-2 hover:text-teal-brand transition-colors text-sm font-semibold", isScrolled ? "text-navy" : "text-white drop-shadow-sm")}>
+            <Phone weight={isScrolled ? "light" : "fill"} className="w-5 h-5" />
             03 379 0590
           </a>
           <Button asChild className="bg-blush hover:bg-blush/90 text-white rounded-md text-sm cursor-pointer shadow-none">
@@ -58,7 +77,7 @@ export function Navbar() {
         {/* Mobile Nav */}
         <div className="md:hidden flex items-center">
           <Sheet open={open} onOpenChange={setOpen}>
-            <SheetTrigger className="inline-flex items-center justify-center rounded-md p-2 text-navy hover:bg-black/5 transition-colors focus:outline-none focus:ring-2 focus:ring-teal-brand focus:ring-offset-2">
+            <SheetTrigger className={clsx("inline-flex items-center justify-center rounded-md p-2 hover:bg-black/5 transition-colors focus:outline-none focus:ring-2 focus:ring-teal-brand focus:ring-offset-2", isScrolled ? "text-navy" : "text-white")}>
               <List weight="light" className="w-6 h-6" />
               <span className="sr-only">Toggle menu</span>
             </SheetTrigger>

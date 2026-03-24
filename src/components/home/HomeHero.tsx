@@ -11,7 +11,7 @@ export function HomeHero() {
   const words = headline.split(" ");
 
   return (
-    <section className="relative flex-1 w-full min-h-[500px] flex items-center bg-navy overflow-hidden">
+    <section className="relative w-full min-h-[100svh] flex items-center bg-navy overflow-hidden">
       {/* Background Image with Teal Overlay */}
       <motion.div 
         initial={{ opacity: 0 }}
