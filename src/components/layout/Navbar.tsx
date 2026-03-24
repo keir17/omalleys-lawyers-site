@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 import { useState } from "react";
 import { clsx } from "clsx";
+import Image from "next/image";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -23,8 +24,8 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full bg-warm-white/90 backdrop-blur-md border-b border-border/40">
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-        <Link href="/" className="font-heading text-2xl text-navy font-semibold tracking-wide">
-          O'Malleys Lawyers
+        <Link href="/" className="h-full block">
+          <Image src="/images/logo.jpeg" alt="O'Malleys Lawyers" width={400} height={100} className="h-full w-auto object-contain mix-blend-multiply" priority />
         </Link>
 
         {/* Desktop Nav */}
