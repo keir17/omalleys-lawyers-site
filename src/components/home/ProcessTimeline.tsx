@@ -45,7 +45,7 @@ export function ProcessTimeline() {
   return (
     <div ref={containerRef} className="relative max-w-4xl mx-auto py-10 mt-16 px-4 md:px-0">
       {/* Background Line */}
-      <div className="absolute left-[34px] md:left-1/2 top-0 bottom-0 w-[3px] bg-border md:-translate-x-1/2 rounded-full overflow-hidden">
+      <div className="absolute left-[48px] md:left-1/2 top-0 bottom-0 w-[3px] bg-border md:-translate-x-1/2 rounded-full overflow-hidden">
         {/* Draw Line */}
         <motion.div 
           className="absolute left-0 right-0 top-0 bg-teal-brand w-full origin-top"
@@ -72,7 +72,7 @@ function ProcessStep({ step, index }: { step: any; index: number }) {
   return (
     <div 
       ref={ref}
-      className={`flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-12 relative ${
+      className={`flex flex-row items-start md:items-center gap-6 md:gap-12 relative ${
         isEven ? "md:flex-row" : "md:flex-row-reverse"
       }`}
     >
@@ -95,7 +95,7 @@ function ProcessStep({ step, index }: { step: any; index: number }) {
         initial={{ opacity: 0, y: 30 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
         transition={{ delay: 0.3, duration: 0.5, ease: "easeOut" }}
-        className="md:w-1/2 bg-white rounded-xl p-8 shadow-sm border border-border/80 flex-1 w-full ml-20 md:ml-0"
+        className="md:w-1/2 bg-white rounded-xl p-6 md:p-8 shadow-sm border border-border/80 flex-1 mt-0 md:mt-0"
       >
         <div className="text-blush font-bold text-xs mb-3 opacity-90 uppercase tracking-[0.2em]">Step {index + 1}</div>
         <h3 className="text-2xl font-heading text-navy font-semibold mb-3">{step.title}</h3>
