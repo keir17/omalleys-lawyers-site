@@ -18,7 +18,7 @@ export function TrustBar() {
           </div>
           <div className="flex flex-col">
             <span className="font-bold text-navy text-sm group-hover:text-teal-brand transition-colors">4.5 / 5.0</span>
-            <span className="text-xs text-mid">56 Google Reviews</span>
+            <span className="text-xs text-mid">56+ Google Reviews</span>
           </div>
         </a>
 
