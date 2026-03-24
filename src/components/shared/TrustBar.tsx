@@ -6,8 +6,8 @@ export function TrustBar() {
       <div className="container mx-auto px-4 flex flex-col md:flex-row flex-wrap items-center justify-center gap-8 md:gap-16">
         
         {/* Rating */}
-        <div className="flex items-center gap-3">
-          <div className="flex gap-1 text-[#f59e0b]">
+        <a href="https://share.google/XkSFPoGDmJsHEeMXU" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 group cursor-pointer transition-all hover:-translate-y-0.5">
+          <div className="flex gap-1 text-[#f59e0b] transition-transform group-hover:scale-105">
             {[...Array(5)].map((_, i) => (
               i === 4 ? (
                 <StarHalf key={i} weight="fill" className="w-5 h-5" />
@@ -17,10 +17,10 @@ export function TrustBar() {
             ))}
           </div>
           <div className="flex flex-col">
-            <span className="font-bold text-navy text-sm">4.5 / 5.0</span>
+            <span className="font-bold text-navy text-sm group-hover:text-teal-brand transition-colors">4.5 / 5.0</span>
             <span className="text-xs text-mid">56 Google Reviews</span>
           </div>
-        </div>
+        </a>
 
         <div className="hidden md:block w-px h-10 bg-border"></div>
 
