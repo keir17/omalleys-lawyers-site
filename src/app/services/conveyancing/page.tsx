@@ -26,7 +26,7 @@ export default function ConveyancingPage() {
               <div>
                 <SectionHeading title="Property Transactions Made Simple" />
                 <p className="text-lg text-mid leading-relaxed">
-                  Buying or selling your home is one of the biggest decisions you'll make. Our conveyancing team handles the legal detail from start to finish — from reviewing the agreement and title checks to settlement. Available to both new and existing clients buying or selling residential property in Christchurch and the surrounding areas.
+                  Buying or selling your home is one of the biggest decisions you'll make. Our conveyancing team handles the legal detail from start to finish - from reviewing the agreement and title checks to settlement. Available to both new and existing clients buying or selling residential property in Christchurch and the surrounding areas.
                 </p>
               </div>
             </div>

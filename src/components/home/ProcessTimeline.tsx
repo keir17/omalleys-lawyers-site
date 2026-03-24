@@ -7,7 +7,7 @@ import { Phone, Users, Scales, Handshake, CheckCircle } from "@phosphor-icons/re
 const steps = [
   {
     title: "Get in touch",
-    description: "Call us on 03 379 0590 or email admin@omalleys.co.nz. We'll set up an initial consultation — usually within 1–2 days for urgent matters.",
+    description: "Call us on 03 379 0590 or email admin@omalleys.co.nz. We'll set up an initial consultation - usually within 1–2 days for urgent matters.",
     icon: Phone,
   },
   {
@@ -27,7 +27,7 @@ const steps = [
   },
   {
     title: "Resolution",
-    description: "Whether it's a negotiated settlement, court order, signed will, or settled property purchase — we work toward the clearest, most practical outcome for you.",
+    description: "Whether it's a negotiated settlement, court order, signed will, or settled property purchase - we work toward the clearest, most practical outcome for you.",
     icon: CheckCircle,
   },
 ];

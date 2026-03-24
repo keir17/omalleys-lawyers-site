@@ -7,7 +7,7 @@ const team = [
     name: "Felicity O'Malley", 
     role: "Principal / Barrister & Solicitor", 
     initials: "FO",
-    bio: "Felicity has been a Barrister and Solicitor in Christchurch since 1987. As principal of O'Malleys Lawyers, she brings over 35 years of specialist experience in family law, property, trusts, and estates. Clients consistently describe her communication as excellent and her support as 'incredible' — and her sense of humour is a bonus during what are rarely easy times.",
+    bio: "Felicity has been a Barrister and Solicitor in Christchurch since 1987. As principal of O'Malleys Lawyers, she brings over 35 years of specialist experience in family law, property, trusts, and estates. Clients consistently describe her communication as excellent and her support as 'incredible' - and her sense of humour is a bonus during what are rarely easy times.",
     email: "felicity@omalleys.co.nz"
   },
   { 

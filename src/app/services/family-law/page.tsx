@@ -27,7 +27,7 @@ export default function FamilyLawPage() {
               <div>
                 <SectionHeading title="Care of Children / Parenting" />
                 <p className="text-lg text-mid leading-relaxed">
-                  When your children are at the centre of a legal dispute, you need someone who understands both the law and the stakes. We guide parents through every step — from initial parenting orders and day-to-day care arrangements to complex shared care disputes and enforcing breaches. We focus on practical, child-centred outcomes.
+                  When your children are at the centre of a legal dispute, you need someone who understands both the law and the stakes. We guide parents through every step - from initial parenting orders and day-to-day care arrangements to complex shared care disputes and enforcing breaches. We focus on practical, child-centred outcomes.
                 </p>
               </div>
 
@@ -48,7 +48,7 @@ export default function FamilyLawPage() {
               <div>
                 <SectionHeading title="Guardianship & Complex Family Matters" />
                 <p className="text-lg text-mid leading-relaxed">
-                  Some family situations involve more than just parenting — they involve fundamental questions about where a child lives, which school they attend, or what medical treatment they receive. These disputes require a lawyer who knows the Family Court inside out. We handle complex guardianship matters with calm expertise.
+                  Some family situations involve more than just parenting - they involve fundamental questions about where a child lives, which school they attend, or what medical treatment they receive. These disputes require a lawyer who knows the Family Court inside out. We handle complex guardianship matters with calm expertise.
                 </p>
               </div>
 

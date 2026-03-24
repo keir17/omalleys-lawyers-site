@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const allFaqs = [
   {
     question: "How much does family law advice cost?",
-    answer: "We offer both hourly rate and fixed-fee billing depending on the matter. Many family law cases also qualify for Legal Aid — we'll always let you know if you're eligible. We believe in being upfront about costs before any work begins."
+    answer: "We offer both hourly rate and fixed-fee billing depending on the matter. Many family law cases also qualify for Legal Aid - we'll always let you know if you're eligible. We believe in being upfront about costs before any work begins."
   },
   {
     question: "Do you offer Legal Aid?",
@@ -28,14 +28,14 @@ const allFaqs = [
   },
   {
     question: "Where are you located, and is there parking?",
-    answer: "We're on Level 1 at 68 Fitzgerald Avenue, Christchurch Central City. Off-street parking is available — just one less thing to worry about when you visit."
+    answer: "We're on Level 1 at 68 Fitzgerald Avenue, Christchurch Central City. Off-street parking is available - just one less thing to worry about when you visit."
   },
   {
     question: "What's the difference between a barrister and a solicitor?",
-    answer: "In New Zealand most lawyers are admitted as both Barristers and Solicitors — meaning they can advise clients AND appear in court. All our lawyers are fully qualified to represent you at any level of the Family Court."
+    answer: "In New Zealand most lawyers are admitted as both Barristers and Solicitors - meaning they can advise clients AND appear in court. All our lawyers are fully qualified to represent you at any level of the Family Court."
   },
   {
-    question: "I need a will — how long does it take?",
+    question: "I need a will - how long does it take?",
     answer: "A straightforward will can usually be completed within a few days once we have your instructions. We'll walk you through the key decisions clearly so you don't have to guess."
   },
   {

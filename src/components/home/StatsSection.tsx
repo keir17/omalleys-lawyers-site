@@ -41,7 +41,7 @@ export function StatsSection() {
         <div className="max-w-4xl">
           <SectionHeading 
             title="Why Choose O'Malleys?" 
-            subtitle="We're a boutique family and property law firm — and we've stayed boutique deliberately. The quality of your relationship with your lawyer matters just as much as their qualifications."
+            subtitle="We're a boutique family and property law firm - and we've stayed boutique deliberately. The quality of your relationship with your lawyer matters just as much as their qualifications."
           />
         </div>
 

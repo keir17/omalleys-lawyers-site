@@ -14,7 +14,7 @@ export default function AboutPage() {
     <main className="flex-1 w-full flex flex-col">
       <PageHero 
         title="About O'Malleys Lawyers" 
-        subtitle="Specialist family and property law firm — where you're not just a case number."
+        subtitle="Specialist family and property law firm - where you're not just a case number."
       />
 
       <section className="py-24 bg-surface relative overflow-hidden">
@@ -33,17 +33,17 @@ export default function AboutPage() {
               O'Malleys Lawyers was founded in Christchurch in 2006 with a straightforward belief: that specialist legal help should feel human.
             </p>
             <p>
-              We're a boutique family and property law firm — and we've stayed boutique deliberately. Not because we can't grow, but because we know that the quality of your relationship with your lawyer matters as much as their qualifications. When your family is going through something difficult, you deserve a lawyer who knows your name, returns your calls, and explains things clearly.
+              We're a boutique family and property law firm - and we've stayed boutique deliberately. Not because we can't grow, but because we know that the quality of your relationship with your lawyer matters as much as their qualifications. When your family is going through something difficult, you deserve a lawyer who knows your name, returns your calls, and explains things clearly.
             </p>
             <p>
-              Our team brings over 61 years of combined legal experience to every matter we take on. Our principal, Felicity O'Malley, has been practising law in Christchurch since 1987 — she's seen the Family Court evolve, the laws change, and hundreds of families find a way through. That depth of experience is what we bring to even the most straightforward matter.
+              Our team brings over 61 years of combined legal experience to every matter we take on. Our principal, Felicity O'Malley, has been practising law in Christchurch since 1987 - she's seen the Family Court evolve, the laws change, and hundreds of families find a way through. That depth of experience is what we bring to even the most straightforward matter.
             </p>
             <p>
-              We're also one of the few Christchurch firms still actively providing Legal Aid — because we believe access to justice shouldn't depend on your income.
+              We're also one of the few Christchurch firms still actively providing Legal Aid - because we believe access to justice shouldn't depend on your income.
             </p>
             <div className="bg-blush/10 border-l-4 border-blush p-6 mt-8 rounded-r-lg">
               <p className="font-semibold text-navy mb-0">
-                If you're facing something hard — a separation, a custody dispute, a family violence situation, or the loss of a loved one — we're the team you call first.
+                If you're facing something hard - a separation, a custody dispute, a family violence situation, or the loss of a loved one - we're the team you call first.
               </p>
             </div>
           </div>

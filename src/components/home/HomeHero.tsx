@@ -49,7 +49,7 @@ export function HomeHero() {
             transition={{ delay: words.length * 0.06 + 0.2, duration: 0.5 }}
             className="text-lg md:text-xl text-white/90 font-sans max-w-2xl mb-10 leading-relaxed drop-shadow-sm"
           >
-            For over 20 years, O'Malleys has helped Christchurch families navigate separation, custody, relationship property, and more — with expertise you can trust and care you'll actually feel.
+            For over 20 years, O'Malleys has helped Christchurch families navigate separation, custody, relationship property, and more - with expertise you can trust and care you'll actually feel.
           </motion.p>
           
           <motion.div 

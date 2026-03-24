@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     question: "Where are you located, and is there parking?",
-    answer: "We're on Level 1 at 68 Fitzgerald Avenue, Christchurch Central City. Off-street parking is available — just one less thing to worry about when you visit."
+    answer: "We're on Level 1 at 68 Fitzgerald Avenue, Christchurch Central City. Off-street parking is available - just one less thing to worry about when you visit."
   }
 ];
 
