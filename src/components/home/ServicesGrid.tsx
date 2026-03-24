@@ -21,11 +21,11 @@ const services = [
     image: "/images/relationship-property.png",
   },
   {
-    title: "Family Violence",
-    description: "Urgent protection orders and clear support when your family is in danger.",
+    title: "Family Law",
+    description: "Expert guidance for complex family situations, protection orders, and guardianship.",
     icon: Heart,
     href: "/services/family-law",
-    image: "/images/family-violence.png",
+    image: "/images/family-law.png",
   },
   {
     title: "Conveyancing",
