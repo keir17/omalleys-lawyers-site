@@ -1,6 +1,7 @@
 import { PageHero } from "@/components/shared/PageHero";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { AboutTeam } from "@/components/about/AboutTeam";
+import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -22,6 +23,10 @@ export default function AboutPage() {
 
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
           <SectionHeading title="Our Story" />
+          
+          <div className="relative w-full aspect-[3/2] md:aspect-[21/9] rounded-2xl overflow-hidden mb-12 shadow-sm border border-border/60">
+            <Image src="/images/about-office.png" fill className="object-cover" alt="O'Malleys Lawyers Office Environment" priority />
+          </div>
           
           <div className="prose prose-lg text-mid max-w-none space-y-6">
             <p className="text-2xl font-medium text-navy leading-relaxed font-heading">
