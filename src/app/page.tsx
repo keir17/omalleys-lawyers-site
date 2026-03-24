@@ -12,16 +12,11 @@ import { SectionHeading } from "@/components/shared/SectionHeading";
 export default function Home() {
   return (
     <main className="flex-1 flex flex-col w-full overflow-hidden">
-      {/* Responsive Overlay Wrapper */}
-      <div className="relative min-h-[100svh] w-full">
-        {/* 2. Hero */}
-        <HomeHero />
-
-        {/* 3. Trust bar layered at bottom */}
-        <div className="absolute bottom-0 left-0 w-full z-20">
-          <TrustBar />
-        </div>
-      </div>
+      {/* 2 & 3. Responsive 100svh Background Container */}
+      <HomeHero>
+        {/* Trust bar layered securely as a child */}
+        <TrustBar />
+      </HomeHero>
 
       {/* 4. Services grid */}
       <ServicesGrid />

@@ -7,11 +7,11 @@ import { Button } from "@/components/ui/button";
 
 const headline = "Christchurch family law specialists who treat you like a person.";
 
-export function HomeHero() {
+export function HomeHero({ children }: { children?: React.ReactNode }) {
   const words = headline.split(" ");
 
   return (
-    <section className="relative w-full min-h-[100svh] flex items-center bg-navy overflow-hidden">
+    <section className="relative w-full min-h-[100svh] flex flex-col bg-navy overflow-hidden">
       {/* Background Image with Teal Overlay */}
       <motion.div 
         initial={{ opacity: 0 }}
@@ -27,7 +27,7 @@ export function HomeHero() {
         <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/50 to-navy/30"></div>
       </motion.div>
 
-      <div className="container mx-auto px-4 z-10 relative">
+      <div className="flex-1 flex flex-col justify-center container mx-auto px-4 z-10 relative pt-32 pb-16">
         <div className="max-w-3xl">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[4.5rem] font-heading text-white mb-6 leading-[1.1]">
             {words.map((word, i) => (
@@ -70,6 +70,12 @@ export function HomeHero() {
           </motion.div>
         </div>
       </div>
+
+      {children && (
+        <div className="z-10 relative w-full mt-auto">
+          {children}
+        </div>
+      )}
     </section>
   );
 }
