@@ -77,7 +77,7 @@ function ProcessStep({ step, index }: { step: any; index: number }) {
       }`}
     >
       <div className={`md:w-1/2 hidden md:flex ${isEven ? "justify-end text-right" : "justify-start text-left"}`}>
-        <span className="text-8xl font-heading text-surface font-bold absolute top-1/2 -translate-y-1/2 opacity-50 pointer-events-none select-none -z-10 tracking-tighter">
+        <span className="text-8xl font-heading text-blush font-bold absolute top-1/2 -translate-y-1/2 opacity-80 pointer-events-none select-none -z-10 tracking-tighter">
           0{index + 1}
         </span>
       </div>
