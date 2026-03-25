@@ -31,13 +31,13 @@ export default function Home() {
       <section className="relative py-24 overflow-hidden">
         {/* Background Image & Overlay */}
         <Image
-          src="/images/process-bg.png"
-          alt="Law and communication interconnected"
+          src="/process-image.png"
+          alt="How we work process background"
           fill
-          className="object-cover object-center -z-20 opacity-80"
+          className="object-cover object-center -z-20 opacity-20"
           priority={false}
         />
-        <div className="absolute inset-0 bg-surface/85 -z-10" />
+        <div className="absolute inset-0 bg-surface/90 -z-10" />
 
         <div className="container relative mx-auto px-4 text-center z-10">
           <SectionHeading 
