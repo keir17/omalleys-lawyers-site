@@ -28,8 +28,18 @@ export default function Home() {
       <TestimonialsSection />
 
       {/* 7. Process steps */}
-      <section className="py-24 bg-surface/30 overflow-hidden">
-        <div className="container mx-auto px-4 text-center">
+      <section className="relative py-24 overflow-hidden">
+        {/* Background Image & Overlay */}
+        <Image
+          src="/images/process-bg.png"
+          alt="Law and communication interconnected"
+          fill
+          className="object-cover object-center -z-20 opacity-80"
+          priority={false}
+        />
+        <div className="absolute inset-0 bg-surface/85 -z-10" />
+
+        <div className="container relative mx-auto px-4 text-center z-10">
           <SectionHeading 
             title="How We Work Together" 
             subtitle="Clear communication from the first phone call to resolution."
