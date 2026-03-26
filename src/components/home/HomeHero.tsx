@@ -21,7 +21,7 @@ export function HomeHero({ children }: { children?: React.ReactNode }) {
       >
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('https://files.catbox.moe/s0kuz1.jpg')" }}
+          style={{ backgroundImage: "url('https://img.rocketstudio.co.nz/migrated/1774508387832-s0kuz1.jpg')" }}
         />
         <div className="absolute inset-0 bg-[#0891b2] opacity-55 mix-blend-multiply"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/50 to-navy/30"></div>
